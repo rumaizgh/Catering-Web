@@ -11,6 +11,42 @@ document.addEventListener('DOMContentLoaded', () => {
     const drawerLinks = document.querySelectorAll('.drawer-link');
     const navLinks = document.querySelectorAll('.nav-link');
 
+    // ==========================================================================
+    // THEME SWITCHER LOGIC
+    // ==========================================================================
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeToggleMobileBtn = document.getElementById('theme-toggle-mobile');
+    
+    function applyTheme(theme) {
+        if (theme === 'light') {
+            document.body.classList.add('light-theme');
+            if (themeToggleBtn) themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+            if (themeToggleMobileBtn) themeToggleMobileBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+        } else {
+            document.body.classList.remove('light-theme');
+            if (themeToggleBtn) themeToggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+            if (themeToggleMobileBtn) themeToggleMobileBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+        }
+    }
+    
+    function toggleTheme() {
+        const currentTheme = document.body.classList.contains('light-theme') ? 'light' : 'dark';
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        localStorage.setItem('theme', newTheme);
+        applyTheme(newTheme);
+    }
+
+    const savedTheme = localStorage.getItem('theme');
+    
+    if (savedTheme) {
+        applyTheme(savedTheme);
+    } else {
+        applyTheme('light');
+    }
+
+    if (themeToggleBtn) themeToggleBtn.addEventListener('click', toggleTheme);
+    if (themeToggleMobileBtn) themeToggleMobileBtn.addEventListener('click', toggleTheme);
+
     // Sticky Header Scroll Effect
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -122,9 +158,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Packages and Multipliers Mapping
     const packageRates = {
-        silver: 25,
-        gold: 45,
-        platinum: 75
+        silver: 22,
+        gold: 42,
+        platinum: 68
     };
 
     const eventMultipliers = {
@@ -173,15 +209,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (addonStaff && addonStaff.checked) {
             addonsTotal += 350;
-            activeAddons.push({ name: 'Professional Wait Staff', cost: 350 });
+            activeAddons.push({ name: 'Traditional Gahwa (Coffee) Service', cost: 350 });
         }
         if (addonCooking && addonCooking.checked) {
             addonsTotal += 500;
-            activeAddons.push({ name: 'Live Cooking Station Chef', cost: 500 });
+            activeAddons.push({ name: 'Live Charcoal Grill Chef', cost: 500 });
         }
         if (addonDecor && addonDecor.checked) {
             addonsTotal += 600;
-            activeAddons.push({ name: 'Premium Floral & Table Decor', cost: 600 });
+            activeAddons.push({ name: 'Royal Majlis Theme Cushion Decor', cost: 600 });
         }
         if (addonBar && addonBar.checked) {
             addonsTotal += 400;
@@ -245,15 +281,15 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Build selected addons string
             const addonsArr = [];
-            if (addonStaff && addonStaff.checked) addonsArr.push('Professional Wait Staff');
-            if (addonCooking && addonCooking.checked) addonsArr.push('Live Cooking Station');
-            if (addonDecor && addonDecor.checked) addonsArr.push('Premium Floral/Decor');
+            if (addonStaff && addonStaff.checked) addonsArr.push('Traditional Gahwa Service');
+            if (addonCooking && addonCooking.checked) addonsArr.push('Live Charcoal Grill Station');
+            if (addonDecor && addonDecor.checked) addonsArr.push('Royal Majlis Cushion Decor');
             if (addonBar && addonBar.checked) addonsArr.push('Mixology Mocktail Bar');
             
             const addonsText = addonsArr.length > 0 ? addonsArr.join(', ') : 'None';
 
             // Set Form Message text
-            formMsg.value = `Hi Bappus Catering!\n\nI just estimated our event budget using your online calculator and would like to lock in this package:\n\n- Event Type: ${eventTypeName}\n- Guest Count: ${guests}\n- Package Selected: ${selectedPackage} Package\n- Selected Add-ons: ${addonsText}\n- Estimated Quote: ${totalEst}\n\nPlease contact me to discuss our customized gourmet menu choices. Thank you!`;
+            formMsg.value = `Hi Bappus Arabian Catering!\n\nI just estimated our event budget using your online calculator and would like to lock in this package:\n\n- Event Type: ${eventTypeName}\n- Guest Count: ${guests}\n- Package Selected: ${selectedPackage} Package\n- Selected Add-ons: ${addonsText}\n- Estimated Quote: ${totalEst}\n\nPlease contact me to discuss our customized traditional menu choices. Thank you!`;
             
             // Smooth Scroll to Contact Form
             const contactSection = document.getElementById('contact');
