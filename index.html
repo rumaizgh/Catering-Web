@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bappus Catering - Exquisite culinary experiences, customized menus, and professional catering services for weddings, corporate events, and private gatherings.">
+    <title>Bappus Catering | Exquisite Culinary Experiences</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="main-header" id="main-header">
+        <div class="header-container">
+            <a href="#" class="logo" id="logo-brand">
+                <span class="logo-gold">BAPPUS</span> <span class="logo-light">CATERING</span>
+            </a>
+            
+            <nav class="navbar" id="main-navbar">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#menu" class="nav-link">Our Menu</a>
+                <a href="#calculator" class="nav-link">Budget Planner</a>
+                <a href="#testimonials" class="nav-link">Reviews</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="#calculator" class="btn btn-gold btn-sm">Get Estimate</a>
+                <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <div class="drawer-header">
+            <a href="#" class="logo">
+                <span class="logo-gold">BAPPUS</span> <span class="logo-light">CATERING</span>
+            </a>
+            <button class="drawer-close" id="drawer-close" aria-label="Close navigation">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <nav class="drawer-nav">
+            <a href="#home" class="drawer-link">Home</a>
+            <a href="#about" class="drawer-link">About</a>
+            <a href="#services" class="drawer-link">Services</a>
+            <a href="#menu" class="drawer-link">Our Menu</a>
+            <a href="#calculator" class="drawer-link">Budget Planner</a>
+            <a href="#testimonials" class="drawer-link">Reviews</a>
+            <a href="#contact" class="drawer-link">Contact</a>
+            <a href="#calculator" class="btn btn-gold btn-block">Get Estimate</a>
+        </nav>
+    </div>
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg-wrapper">
+            <img src="assets/hero_catering.png" alt="Luxurious catering table setup" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content-wrapper">
+            <div class="hero-content">
+                <span class="hero-subtitle">Est. 2016 | Premium Catering Services</span>
+                <h1 class="hero-title animate-slide-up">Exquisite Flavors, <br><span class="text-gold">Unforgettable Moments</span></h1>
+                <p class="hero-description">We blend culinary excellence with impeccable hospitality to elevate your weddings, corporate events, and private gatherings into timeless memories.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-gold">Explore Our Menu</a>
+                    <a href="#calculator" class="btn btn-outline-white">Estimate Cost <i class="fa-solid fa-calculator"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120H1440V40C1320 10 1140 10 960 25C780 40 600 70 420 75C240 80 120 60 0 40V120Z" fill="var(--bg-primary)"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="grid-2-col">
+                <div class="about-text-content">
+                    <span class="section-tag">Our Philosophy</span>
+                    <h2 class="section-title">Crafting Gastronomic Masterpieces</h2>
+                    <p class="section-desc">At Bappus Catering, we believe that food is not just nourishment—it is an art form, a conversation starter, and the beating heart of every celebration. Our chefs source only the freshest organic ingredients from local farms to design bespoke menus that delight the senses.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-wheat-awn"></i></div>
+                            <div class="feature-text">
+                                <h3>Farm to Table Fresh</h3>
+                                <p>Sourcing local organic ingredients to guarantee flavor and quality.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-utensils"></i></div>
+                            <div class="feature-text">
+                                <h3>Bespoke Menu Creation</h3>
+                                <p>Tailored menus matching your event theme and dietary preferences.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-bell-concierge"></i></div>
+                            <div class="feature-text">
+                                <h3>Professional Service</h3>
+                                <p>Trained, sophisticated service staff ensuring flawless execution.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image-container">
+                    <div class="about-image-wrapper">
+                        <img src="assets/gourmet_appetizers.png" alt="Exquisite appetizers" class="about-main-img">
+                        <div class="about-stat-card">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Events Celebrated</span>
+                        </div>
+                        <div class="about-experience-badge">
+                            <span class="badge-years">10+</span>
+                            <span class="badge-text">Years of Excellence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section section-padding bg-alt">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">Catering for Every Occasion</h2>
+                <p class="section-desc-center">Whether you are hosting an intimate gather or a grand celebration, we deliver outstanding service and culinary delight tailored specifically for your needs.</p>
+            </div>
+            
+            <div class="grid-3-col">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-img-placeholder" style="background-image: url('assets/hero_catering.png');">
+                        <div class="service-icon-bg"><i class="fa-solid fa-ring"></i></div>
+                    </div>
+                    <div class="service-body">
+                        <h3>Grand Weddings</h3>
+                        <p>Impeccable dining experiences designed to reflect your love story. From formal sit-down dinners to elegant buffets and live carving stations.</p>
+                        <ul class="service-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Customized bride & groom menus</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Premium tablescapes & bar setup</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Cake cutting & champagne service</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-img-placeholder" style="background-image: url('assets/gourmet_mains.png');">
+                        <div class="service-icon-bg"><i class="fa-solid fa-briefcase"></i></div>
+                    </div>
+                    <div class="service-body">
+                        <h3>Corporate Galas</h3>
+                        <p>Punctual, professional, and visually spectacular corporate catering. Perfect for product launches, board meetings, and end-of-year galas.</p>
+                        <ul class="service-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Seamless logistical execution</li>
+                            <li><i class="fa-solid fa-circle-check"></i> VIP waiter service</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Healthy, energy-boosting menus</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-img-placeholder" style="background-image: url('assets/gourmet_desserts.png');">
+                        <div class="service-icon-bg"><i class="fa-solid fa-cake-candles"></i></div>
+                    </div>
+                    <div class="service-body">
+                        <h3>Private Soirées</h3>
+                        <p>Intimate birthday dinners, anniversaries, or backyard garden parties. Enjoy your own event while our team takes care of every detail.</p>
+                        <ul class="service-bullets">
+                            <li><i class="fa-solid fa-circle-check"></i> Intimate interactive live cooking</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Themed menu customization</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Post-event cleanup included</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Showcase Section -->
+    <section id="menu" class="menu-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Taste of Elegance</span>
+                <h2 class="section-title">Explore Our Curated Menu</h2>
+                <p class="section-desc-center">A sneak peek into the gourmet creations our chefs serve. Switch categories to view starters, mains, and desserts.</p>
+            </div>
+            
+            <!-- Menu Tabs -->
+            <div class="menu-tabs" id="menu-tabs-container">
+                <button class="menu-tab-btn active" data-target="starters">Appetizers & Starters</button>
+                <button class="menu-tab-btn" data-target="mains">Main Courses</button>
+                <button class="menu-tab-btn" data-target="desserts">Decadent Desserts</button>
+            </div>
+            
+            <!-- Menu Grid Content -->
+            <div class="menu-content-wrapper">
+                <!-- STARTERS GRID -->
+                <div class="menu-grid active" id="menu-starters">
+                    <div class="menu-item-card">
+                        <div class="menu-item-img-box">
+                            <img src="assets/gourmet_appetizers.png" alt="Artisanal Bruschetta">
+                            <span class="menu-item-tag">Chef's Signature</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Artisanal Tartlets & Canapés</h3>
+                                <span class="menu-item-price">From $4.50 / guest</span>
+                            </div>
+                            <p>Delicate pastry shells filled with goat cheese, caramelized figs, walnuts, and drizzled with local wild honey.</p>
+                            <div class="menu-dietary-tags">
+                                <span class="dietary-tag vegetarian">Vegetarian</span>
+                                <span class="dietary-tag organic">Organic</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <div class="menu-item-img-box">
+                            <img src="assets/gourmet_appetizers.png" alt="Seared Tuna Tataki">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Seared Sesame Tuna Tataki</h3>
+                                <span class="menu-item-price">From $6.00 / guest</span>
+                            </div>
+                            <p>Sashimi-grade tuna seared in black sesame crust, served with ginger-wasabi aioli and pickled radish on crisp cucumber.</p>
+                            <div class="menu-dietary-tags">
+                                <span class="dietary-tag gluten-free">Gluten-Free</span>
+                                <span class="dietary-tag seafood">Seafood</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <div class="menu-item-img-box">
+                            <img src="assets/gourmet_appetizers.png" alt="Smoked Salmon Mousse">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Smoked Salmon & Caviar Crostini</h3>
+                                <span class="menu-item-price">From $5.50 / guest</span>
+                            </div>
+                            <p>House-smoked Atlantic salmon whipped with dill cream cheese, topped with black sturgeon caviar on toasted rye bread.</p>
+                            <div class="menu-dietary-tags">
+                                <span class="dietary-tag seafood">Seafood</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- MAINS GRID -->
+                <div class="menu-grid" id="menu-mains">
+                    <div class="menu-item-card">
+                        <div class="menu-item-img-box">
+                            <img src="assets/gourmet_mains.png" alt="Herb-Crusted Rack of Lamb">
+                            <span class="menu-item-tag">Award Winner</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Herb-Crusted Rack of Lamb</h3>
+                                <span class="menu-item-price">From $18.50 / guest</span>
+                            </div>
+                            <p>Tender lamb cutlets roasted with fresh rosemary, garlic, and Dijon mustard, served with a parsnip purée and red wine reduction.</p>
+                            <div class="menu-dietary-tags">
+                                <span class="dietary-tag gluten-free">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <div class="menu-item-img-box">
+                            <img src="assets/gourmet_mains.png" alt="Pan-Seared Sea Bass">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Chilean Sea Bass in Citrus Beurre Blanc</h3>
+                                <span class="menu-item-price">From $16.00 / guest</span>
+                            </div>
+                            <p>Delicate sea bass pan-seared to perfection, served over saffron risotto and finished with a citrus-infused butter reduction.</p>
+                            <div class="menu-dietary-tags">
+                                <span class="dietary-tag gluten-free">Gluten-Free</span>
+                                <span class="dietary-tag seafood">Seafood</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <div class="menu-item-img-box">
+                            <img src="assets/gourmet_mains.png" alt="Wild Mushroom Truffle Risotto">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Truffle Wild Mushroom Risotto</h3>
+                                <span class="menu-item-price">From $12.00 / guest</span>
+                            </div>
+                            <p>Creamy Arborio rice simmered with chanterelle, shiitake, and oyster mushrooms, finished with shavings of white truffle and aged parmesan.</p>
+                            <div class="menu-dietary-tags">
+                                <span class="dietary-tag vegetarian">Vegetarian</span>
+                                <span class="dietary-tag gluten-free">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- DESSERTS GRID -->
+                <div class="menu-grid" id="menu-desserts">
+                    <div class="menu-item-card">
+                        <div class="menu-item-img-box">
+                            <img src="assets/gourmet_desserts.png" alt="Decadent Chocolate Sphere">
+                            <span class="menu-item-tag">Chef's Signature</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Gold-Flecked Chocolate Sphere</h3>
+                                <span class="menu-item-price">From $7.00 / guest</span>
+                            </div>
+                            <p>Dark chocolate shell filled with rich chocolate mousse, salted caramel center, served on a raspberry coulis and dusted with edible gold leaf.</p>
+                            <div class="menu-dietary-tags">
+                                <span class="dietary-tag vegetarian">Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <div class="menu-item-img-box">
+                            <img src="assets/gourmet_desserts.png" alt="Madagascar Vanilla Crème Brûlée">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Madagascar Vanilla Crème Brûlée</h3>
+                                <span class="menu-item-price">From $5.50 / guest</span>
+                            </div>
+                            <p>Classic silky custard flavored with real Madagascar vanilla beans, topped with a perfectly caramelized glass sugar crust.</p>
+                            <div class="menu-dietary-tags">
+                                <span class="dietary-tag vegetarian">Vegetarian</span>
+                                <span class="dietary-tag gluten-free">Gluten-Free</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <div class="menu-item-img-box">
+                            <img src="assets/gourmet_desserts.png" alt="Lemon Lavender Tart">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Citrus Lemon Lavender Tartlet</h3>
+                                <span class="menu-item-price">From $5.00 / guest</span>
+                            </div>
+                            <p>Crispy sweet pastry shell filled with zesty lemon curd, infused with hints of fresh organic lavender, topped with toasted meringue.</p>
+                            <div class="menu-dietary-tags">
+                                <span class="dietary-tag vegetarian">Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-footer text-center">
+                <p>Have specific dietary restrictions? We accommodate Vegan, Halal, Kosher, Nut-Free, and custom needs.</p>
+                <a href="#contact" class="btn btn-outline-gold">Request Custom Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost Calculator Section -->
+    <section id="calculator" class="calculator-section section-padding bg-alt">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Interactive Planner</span>
+                <h2 class="section-title">Estimate Your Catering Budget</h2>
+                <p class="section-desc-center">Get an instant estimation for your upcoming event. Tailor your menu tier, guest count, and service style.</p>
+            </div>
+            
+            <div class="calculator-card">
+                <div class="calculator-grid">
+                    <!-- Calculator Inputs -->
+                    <div class="calculator-inputs">
+                        <!-- Step 1: Event Type -->
+                        <div class="input-group-calc">
+                            <label class="calc-label"><span class="step-num">1</span> Select Event Type</label>
+                            <div class="custom-select-wrapper">
+                                <select id="calc-event-type" class="calc-select">
+                                    <option value="wedding">Wedding Banquet</option>
+                                    <option value="corporate" selected>Corporate Function / Gala</option>
+                                    <option value="private">Private Party / Soirée</option>
+                                    <option value="cocktail">Cocktail & Hors d'oeuvres Gathering</option>
+                                </select>
+                                <i class="fa-solid fa-chevron-down select-arrow"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2: Guest Count Slider -->
+                        <div class="input-group-calc">
+                            <div class="label-with-value">
+                                <label class="calc-label"><span class="step-num">2</span> Guest Count</label>
+                                <span class="calc-val-display" id="guest-count-val">100 Guests</span>
+                            </div>
+                            <div class="slider-container">
+                                <input type="range" id="calc-guests" min="10" max="500" value="100" class="calc-slider">
+                                <div class="slider-markers">
+                                    <span>10</span>
+                                    <span>100</span>
+                                    <span>200</span>
+                                    <span>300</span>
+                                    <span>400</span>
+                                    <span>500+</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3: Package Selection -->
+                        <div class="input-group-calc">
+                            <label class="calc-label"><span class="step-num">3</span> Catering Package Tier</label>
+                            <div class="package-tiers-grid">
+                                <label class="package-option">
+                                    <input type="radio" name="calc-package" value="silver" class="sr-only">
+                                    <div class="package-option-inner">
+                                        <div class="option-check-indicator"><i class="fa-solid fa-check"></i></div>
+                                        <span class="tier-name">Silver Package</span>
+                                        <span class="tier-price">$25 / Guest</span>
+                                        <span class="tier-desc font-sm">3 Starters, 2 Mains, 1 Dessert, Beverages</span>
+                                    </div>
+                                </label>
+                                <label class="package-option active">
+                                    <input type="radio" name="calc-package" value="gold" checked class="sr-only">
+                                    <div class="package-option-inner">
+                                        <div class="option-check-indicator"><i class="fa-solid fa-check"></i></div>
+                                        <span class="tier-name">Gold Package</span>
+                                        <span class="tier-price">$45 / Guest</span>
+                                        <span class="tier-desc font-sm">4 Starters, 3 Mains, 2 Desserts, Mocktail Bar</span>
+                                    </div>
+                                </label>
+                                <label class="package-option">
+                                    <input type="radio" name="calc-package" value="platinum" class="sr-only">
+                                    <div class="package-option-inner">
+                                        <div class="option-check-indicator"><i class="fa-solid fa-check"></i></div>
+                                        <span class="tier-name">Platinum Package</span>
+                                        <span class="tier-price">$75 / Guest</span>
+                                        <span class="tier-desc font-sm">Chef's Live Station, Premium Mains & Seafood, Unlimited Desserts</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 4: Addons -->
+                        <div class="input-group-calc">
+                            <label class="calc-label"><span class="step-num">4</span> Add-on Services</label>
+                            <div class="addons-grid">
+                                <label class="addon-checkbox">
+                                    <input type="checkbox" id="addon-staff" value="staff" checked class="sr-only">
+                                    <div class="addon-box">
+                                        <div class="checkbox-indicator"></div>
+                                        <div class="addon-text">
+                                            <span class="addon-title">Professional Wait Staff</span>
+                                            <span class="addon-cost">+$350 flat rate</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="addon-checkbox">
+                                    <input type="checkbox" id="addon-cooking" value="live" class="sr-only">
+                                    <div class="addon-box">
+                                        <div class="checkbox-indicator"></div>
+                                        <div class="addon-text">
+                                            <span class="addon-title">Live Cooking Station Chef</span>
+                                            <span class="addon-cost">+$500 flat rate</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="addon-checkbox">
+                                    <input type="checkbox" id="addon-decor" value="decor" class="sr-only">
+                                    <div class="addon-box">
+                                        <div class="checkbox-indicator"></div>
+                                        <div class="addon-text">
+                                            <span class="addon-title">Premium Floral & Table Decor</span>
+                                            <span class="addon-cost">+$600 flat rate</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="addon-checkbox">
+                                    <input type="checkbox" id="addon-bar" value="bar" class="sr-only">
+                                    <div class="addon-box">
+                                        <div class="checkbox-indicator"></div>
+                                        <div class="addon-text">
+                                            <span class="addon-title">Premium Mixology Mocktail Bar</span>
+                                            <span class="addon-cost">+$400 flat rate</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Calculator Output -->
+                    <div class="calculator-output-card">
+                        <div class="calc-output-header">
+                            <h3>Estimated Quote</h3>
+                            <p>Subject to menu customization</p>
+                        </div>
+                        <div class="calc-output-total">
+                            <span class="total-label">Estimated Total</span>
+                            <span class="total-amount" id="calc-total-display">$4,850</span>
+                        </div>
+                        <div class="calc-breakdown-wrapper">
+                            <div class="calc-breakdown-row">
+                                <span class="breakdown-item">Base Rate (<span id="breakdown-tier">Gold</span>)</span>
+                                <span class="breakdown-val" id="breakdown-base-total">$4,500</span>
+                            </div>
+                            <div class="calc-breakdown-row font-sm text-muted">
+                                <span>Rate per guest details</span>
+                                <span id="breakdown-per-guest">$45.00 x 100</span>
+                            </div>
+                            <div class="calc-breakdown-divider"></div>
+                            <div class="calc-breakdown-row">
+                                <span class="breakdown-item">Add-on Services</span>
+                                <span class="breakdown-val" id="breakdown-addons-total">$350</span>
+                            </div>
+                            <ul class="calc-addons-list" id="calc-active-addons-list">
+                                <li><i class="fa-solid fa-plus font-xs"></i> Professional Wait Staff ($350)</li>
+                            </ul>
+                        </div>
+                        <div class="calc-output-cta">
+                            <button id="calc-cta-btn" class="btn btn-gold btn-block">Lock in Quote & Inquiry</button>
+                            <p class="cta-disclaimer"><i class="fa-solid fa-circle-info"></i> Estimation does not include local taxes and dynamic transport surcharges.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Client Reviews</span>
+                <h2 class="section-title">Loved by Hosts & Guests</h2>
+                <p class="section-desc-center">Discover what organizers have said about our culinary craftsmanship and prompt, warm services.</p>
+            </div>
+            
+            <!-- Slider Carousel -->
+            <div class="slider-wrapper">
+                <div class="testimonials-slider" id="testimonials-slider">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Bappus Catering created a masterwork for our wedding. The appetizers were talked about for weeks—especially the fig tartlets! The crew executed everything seamlessly, keeping glass plates filled and our guests absolutely happy. Highly recommend the Platinum Package!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fa-solid fa-user-circle"></i></div>
+                            <div class="author-details">
+                                <h4 class="author-name">Elizabeth & David R.</h4>
+                                <span class="author-event">Wedding Banquet (180 Guests)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"We hired them for our corporate annual gala. Punctual set up, outstanding presentation, and delicious food that accommodated our strict vegetarian and gluten-free executives without compromising flavor. Extremely professional coordination."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                            <div class="author-details">
+                                <h4 class="author-name">Marcus Vance</h4>
+                                <span class="author-event">HR Director, Vantage Corp (350 Guests)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p class="testimonial-quote">"Superb experience! We booked a private backyard party and selected the Gold Package. The live station chef made outstanding mini sliders and kebabs. The cleanup was pristine, leaving us to enjoy the night stress-free."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fa-solid fa-circle-user"></i></div>
+                            <div class="author-details">
+                                <h4 class="author-name">Sophia Martinez</h4>
+                                <span class="author-event">Birthday Gathering (40 Guests)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Dots -->
+                <div class="slider-dots" id="slider-dots-container">
+                    <button class="dot-btn active" data-slide="0" aria-label="Go to slide 1"></button>
+                    <button class="dot-btn" data-slide="1" aria-label="Go to slide 2"></button>
+                    <button class="dot-btn" data-slide="2" aria-label="Go to slide 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Inquiry Form Section -->
+    <section id="contact" class="contact-section section-padding bg-alt">
+        <div class="container">
+            <div class="grid-2-col-contact">
+                <!-- Contact info -->
+                <div class="contact-info-card">
+                    <span class="section-tag">Let's Connect</span>
+                    <h2 class="section-title">Schedule a Consultation</h2>
+                    <p class="section-desc">Plan your dream event menu with our culinary coordinators. Call us, email us, or fill out the booking form to get a personalized gourmet proposal.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method-item">
+                            <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="method-text">
+                                <h3>Call/Text Inquiry</h3>
+                                <p>+1 (555) 782-9900</p>
+                            </div>
+                        </div>
+                        <div class="contact-method-item">
+                            <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="method-text">
+                                <h3>Email Proposals</h3>
+                                <p>events@bappuscatering.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method-item">
+                            <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="method-text">
+                                <h3>Culinary Kitchen Headquarters</h3>
+                                <p>485 Gourmet Avenue, Suite 100, San Francisco, CA 94107</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-hours">
+                        <h3>Operating Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                        <p class="text-gold font-sm"><i class="fa-solid fa-clock"></i> Kitchen operations are active 24/7 matching event timelines.</p>
+                    </div>
+                </div>
+                
+                <!-- Contact form -->
+                <div class="contact-form-card">
+                    <form id="catering-inquiry-form" class="inquiry-form">
+                        <div class="form-title">
+                            <h3>Event Inquiry Form</h3>
+                            <p>Please enter details to get a customized catering proposal.</p>
+                        </div>
+                        
+                        <div class="grid-2-col-form">
+                            <div class="form-group">
+                                <label for="form-name">Full Name *</label>
+                                <input type="text" id="form-name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email Address *</label>
+                                <input type="email" id="form-email" required placeholder="john@example.com">
+                            </div>
+                        </div>
+                        
+                        <div class="grid-2-col-form">
+                            <div class="form-group">
+                                <label for="form-phone">Phone Number *</label>
+                                <input type="tel" id="form-phone" required placeholder="(555) 000-0000">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-date">Event Date *</label>
+                                <input type="date" id="form-date" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="form-msg">Specific Details & Dietary Requirements</label>
+                            <textarea id="form-msg" rows="5" placeholder="Specify any food allergies, preference for buffet vs plated service, or custom food preferences..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-gold btn-block btn-lg" id="form-submit-btn">
+                            Send Booking Request <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    
+                    <!-- Contact Form Success Message (Hidden by default) -->
+                    <div class="form-success-card" id="form-success-message">
+                        <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                        <h3>Inquiry Received!</h3>
+                        <p>Thank you for contacting Bappus Catering. Our event coordinator will review your calculated quote and reach out within 24 business hours to finalize your menu.</p>
+                        <button class="btn btn-outline-white btn-sm" id="success-reset-btn">Send Another Inquiry</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand-col">
+                    <a href="#" class="logo">
+                        <span class="logo-gold">BAPPUS</span> <span class="logo-light">CATERING</span>
+                    </a>
+                    <p class="footer-brand-desc">Exquisite culinary catering for weddings, gala events, and private gatherings. Celebrating good food, community, and life's best highlights.</p>
+                    <div class="footer-social-links">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#" aria-label="Yelp"><i class="fa-brands fa-yelp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Our Story</a></li>
+                        <li><a href="#services">Catering Services</a></li>
+                        <li><a href="#menu">Our Menu Showcase</a></li>
+                        <li><a href="#calculator">Dynamic Calculator</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h3>Events</h3>
+                    <ul>
+                        <li><a href="#services">Elegant Weddings</a></li>
+                        <li><a href="#services">Corporate Galas</a></li>
+                        <li><a href="#services">Private Birthday Parties</a></li>
+                        <li><a href="#services">Cocktail Receptions</a></li>
+                        <li><a href="#services">Holiday Dinners</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact-col">
+                    <h3>Contact Information</h3>
+                    <p><i class="fa-solid fa-envelope text-gold"></i> events@bappuscatering.com</p>
+                    <p><i class="fa-solid fa-phone text-gold"></i> +1 (555) 782-9900</p>
+                    <p><i class="fa-solid fa-map-location-dot text-gold"></i> 485 Gourmet Avenue, San Francisco, CA</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bappus Catering. All Rights Reserved. Crafted with Culinary Passion.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
